@@ -1,0 +1,92 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{parskip}
+\usepackage{mathtools}
+\usepackage[final]{graphicx}
+\usepackage[caption = false]{subfig}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[official]{eurosym}
+
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[table]{xcolor}
+\usepackage{matlab}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
+ 
+\lstset{ 
+  backgroundcolor=\color{backcolor},    % choose the background color; should come as last argument
+  commentstyle=\color{codegreen},       % comment style
+  keywordstyle=\color{magenta},         % keyword style
+  numberstyle=\tiny\color{codegray},    % the style that is used for the line-numbers
+  stringstyle=\color{codepurple},       % string literal style
+  basicstyle=\ttfamily\footnotesize,    % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  language=R,                      % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  %title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\usepackage{graphicx}
+
+\newcommand{\pp}{\mathbb P}     %blackboard bold P
+\newcommand{\ff}{\mathcal F}     %scripty F
+
+%These deal with definition-like environments (i.e., non-italic)
+\theoremstyle{definition}
+\newtheorem*{solution}{Solution}
+
+\begin{document}
+\matlabtitle{Template}
+
+\matlabheading{Report Topic}
+
+
+\matlabheadingtwo{\underline{H1}:}
+
+\paragraph{Example problem} Do some work and verify that some work was successful. Discuss.
+
+\begin{matlabcode}
+clc;clear;close all;
+X = 0:0.1:1
+\end{matlabcode}
+\begin{matlaboutput}
+X =
+         0
+    0.1000
+    0.2000
+    0.3000
+    0.4000
+    0.5000
+    0.6000
+    0.7000
+    0.8000
+    0.9000
+    1.0000
+\end{matlaboutput}
+
+\end{document}
